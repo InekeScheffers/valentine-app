@@ -1,0 +1,28 @@
+<head>
+  <title>I like you!</title>
+  <script>
+    var arrIndex = 0;
+    var arr = ["...you're so smart!",
+     "...you have a sexy beard!",
+     "...you're funny!"
+     //these are just some examples, make it personal by adding a hundredmillionbillion more reasons
+   ];
+    function fun(){
+      var txt = arr[arrIndex];
+      document.getElementById("msg").innerHTML = txt;
+      arrIndex = arrIndex + 1; //arrIndex++
+
+      if (arrIndex >= arr.length) {
+        arrIndex = 0;
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <h1>I like you because...</h1>
+
+  <p><div id="heart" onclick="fun()"><div id="text">Click!</div></div>
+<div id="msg"></div></p>
+
+</body>
